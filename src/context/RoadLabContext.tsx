@@ -472,8 +472,8 @@ interface RoadLabContextType {
   markNotificationsAsRead: () => void;
 }
 
-const BACKEND_BASE = 'http://localhost:8000';
-const WS_BASE = 'ws://localhost:8000';
+const BACKEND_BASE = (import.meta.env.VITE_BACKEND_URL as string) || 'http://localhost:8000';
+const WS_BASE = (import.meta.env.VITE_WS_URL as string) || 'ws://localhost:8000';
 
 const RoadLabContext = createContext<RoadLabContextType | undefined>(undefined);
 

@@ -290,7 +290,8 @@ export const RoadDistress: React.FC = () => {
   const downloadReport = async (format: string) => {
     try {
       const formatClean = format.toLowerCase();
-      const res = await fetch(`http://localhost:8000/api/export/latest/distress_${formatClean}`);
+      const backendBase = (import.meta.env.VITE_BACKEND_URL as string) || 'http://localhost:8000';
+      const res = await fetch(`${backendBase}/api/export/latest/distress_${formatClean}`);
       if (res.ok) {
         const blob = await res.blob();
         const url = window.URL.createObjectURL(blob);
@@ -313,7 +314,8 @@ export const RoadDistress: React.FC = () => {
 
   const downloadPDFReport = async () => {
     try {
-      const res = await fetch(`http://localhost:8000/api/export/latest/pdf`);
+      const backendBase = (import.meta.env.VITE_BACKEND_URL as string) || 'http://localhost:8000';
+      const res = await fetch(`${backendBase}/api/export/latest/pdf`);
       if (res.ok) {
         const blob = await res.blob();
         const url = window.URL.createObjectURL(blob);

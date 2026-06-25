@@ -100,7 +100,8 @@ export const VideoCanvas: React.FC = () => {
 
   // Load sample video URL
   const loadSampleVideo = () => {
-    const trafficUrl = 'http://localhost:8000/api/videos/sample';
+    const backendBase = (import.meta.env.VITE_BACKEND_URL as string) || 'http://localhost:8000';
+    const trafficUrl = `${backendBase}/api/videos/sample`;
     setVideoFile(trafficUrl);
   };
 

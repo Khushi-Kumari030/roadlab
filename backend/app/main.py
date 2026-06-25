@@ -1,6 +1,7 @@
 import asyncio
 import json
 import logging
+import os
 import numpy as np
 from typing import Optional
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException, UploadFile, File, Form
@@ -60,9 +61,23 @@ class ChangePasswordRequest(BaseModel):
 app = FastAPI(title="RoadLab AI Inference Engine API", version="1.0.0")
 
 # CORS Configuration
+# In production: set ALLOWED_ORIGINS env var to your Vercel frontend URL
+# e.g. ALLOWED_ORIGINS=https://roadlab.vercel.app
+# For local development, all localhost origins are allowed by default
+_raw_origins = os.environ.get("ALLOWED_ORIGINS", "")
+if _raw_origins:
+    _allowed_origins = [o.strip() for o in _raw_origins.split(",")]
+else:
+    _allowed_origins = [
+        "http://localhost:5173",
+        "http://localhost:4173",
+        "http://localhost:3000",
+        "http://127.0.0.1:5173",
+    ]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Vite development origins
+    allow_origins=_allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

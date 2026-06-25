@@ -1,6 +1,6 @@
 import { type User } from '../context/RoadLabContext';
 
-const BACKEND_BASE = 'http://localhost:8000';
+const BACKEND_BASE = (import.meta.env.VITE_BACKEND_URL as string) || 'http://localhost:8000';
 
 export class AuthService {
   private static SESSION_KEY = 'roadlab_user_session';

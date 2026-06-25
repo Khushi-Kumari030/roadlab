@@ -19,7 +19,8 @@ export const AIHistoryPanel: React.FC = () => {
 
   const handleExport = (jobId: string, format: 'csv' | 'json' | 'mp4') => {
     // Directly download from backend API
-    const downloadUrl = `http://localhost:8000/api/export/${jobId}/${format}`;
+    const backendBase = (import.meta.env.VITE_BACKEND_URL as string) || 'http://localhost:8000';
+    const downloadUrl = `${backendBase}/api/export/${jobId}/${format}`;
     const link = document.createElement('a');
     link.href = downloadUrl;
     link.setAttribute('download', `roadlab-results-${jobId}.${format === 'mp4' ? 'mp4' : format}`);
