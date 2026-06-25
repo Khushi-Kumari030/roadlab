@@ -1,0 +1,112 @@
+# ============================================================
+# RoadLab Production .gitignore
+# ============================================================
+
+# ------------------------------------
+# Frontend Build Outputs
+# ------------------------------------
+node_modules/
+dist/
+dist-ssr/
+build/
+
+# ------------------------------------
+# Frontend Cache & Local Config
+# ------------------------------------
+*.local
+.env
+.env.local
+.env.development
+.env.production
+
+# ------------------------------------
+# Python Virtual Environment
+# ------------------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ------------------------------------
+# AI Model Weight Files
+# ------------------------------------
+*.pt
+*.pth
+*.onnx
+*.engine
+*.trt
+*.bin
+best.pt
+RDD_data_potholes.pt
+
+# ------------------------------------
+# User Data & Runtime Databases (PII)
+# ------------------------------------
+backend/backend/data/users.json
+backend/backend/data/exports/
+
+# ------------------------------------
+# Video Files (large binaries)
+# ------------------------------------
+public/sample_video.mp4
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# ------------------------------------
+# Log Files
+# ------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------
+# Temporary & Cache Directories
+# ------------------------------------
+tmp/
+temp/
+cache/
+.cache/
+generated_outputs/
+exported_videos/
+uploaded_videos/
+uploaded_models/
+
+# ------------------------------------
+# Editor & IDE Files
+# ------------------------------------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------------------------------------
+# Testing Artifacts
+# ------------------------------------
+coverage/
+.nyc_output/
+test-results/
+
+# ------------------------------------
+# Miscellaneous
+# ------------------------------------
+*.bak
+*.backup
+*.orig
+*.patch

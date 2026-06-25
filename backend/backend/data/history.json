@@ -1,0 +1,102 @@
+[
+  {
+    "id": "job-101",
+    "name": "US-101 Lane Trace",
+    "model_name": "ResNet50-LaneDetection.pt",
+    "video_name": "highway_traffic.mp4",
+    "date": "2026-06-22 14:15",
+    "status": "Completed",
+    "total_frames": 1200,
+    "avg_fps": 32.4
+  },
+  {
+    "id": "job-102",
+    "name": "Pothole Scan Run 2",
+    "model_name": "YOLOv8n-RoadDamage.onnx",
+    "video_name": "pavement_distress_clip.mp4",
+    "date": "2026-06-23 11:10",
+    "status": "Completed",
+    "total_frames": 840,
+    "avg_fps": 41.2
+  },
+  {
+    "id": "job-1782217941",
+    "name": "IR0001_CAM1_20260621_071657_SEG001 AI Trace",
+    "model_name": "YOLOv8n-RoadDamage.onnx",
+    "video_name": "IR0001_CAM1_20260621_071657_SEG001.avi",
+    "date": "2026-06-23 18:02",
+    "status": "Completed",
+    "total_frames": 300,
+    "avg_fps": 30.0
+  },
+  {
+    "id": "job-1782218223",
+    "name": "IR0001_CAM1_20260621_071657_SEG001 AI Trace",
+    "model_name": "YOLOv8n-RoadDamage.onnx",
+    "video_name": "IR0001_CAM1_20260621_071657_SEG001.avi",
+    "date": "2026-06-23 18:07",
+    "status": "Completed",
+    "total_frames": 300,
+    "avg_fps": 30.0
+  },
+  {
+    "id": "job-1782218809",
+    "name": "DJI_20260621100610_0069_D AI Trace",
+    "model_name": "YOLOv8n-RoadDamage.onnx",
+    "video_name": "DJI_20260621100610_0069_D.MP4",
+    "date": "2026-06-23 18:16",
+    "status": "Completed",
+    "total_frames": 300,
+    "avg_fps": 30.0
+  },
+  {
+    "id": "job-1782278482",
+    "name": "DJI_20260621103107_0070_D AI Trace",
+    "model_name": "YOLOv8n-RoadDamage.onnx",
+    "video_name": "DJI_20260621103107_0070_D.MP4",
+    "date": "2026-06-24 10:51",
+    "status": "Completed",
+    "total_frames": 300,
+    "avg_fps": 30.0
+  },
+  {
+    "id": "job-1782307975",
+    "name": "DJI_20260621103107_0070_D AI Trace",
+    "model_name": "YOLOv8n-RoadDamage.onnx",
+    "video_name": "DJI_20260621103107_0070_D.MP4",
+    "date": "2026-06-24 19:02",
+    "status": "Completed",
+    "total_frames": 300,
+    "avg_fps": 30.0
+  },
+  {
+    "id": "job-1782367228",
+    "name": "DJI_20260621103107_0070_D AI Trace",
+    "model_name": "Unknown Model",
+    "video_name": "DJI_20260621103107_0070_D.MP4",
+    "date": "2026-06-25 11:30",
+    "status": "Completed",
+    "total_frames": 300,
+    "avg_fps": 30.0
+  },
+  {
+    "id": "job-1782367840",
+    "name": "DJI_20260621103107_0070_D AI Trace",
+    "model_name": "Unknown Model",
+    "video_name": "DJI_20260621103107_0070_D.MP4",
+    "date": "2026-06-25 11:40",
+    "status": "Completed",
+    "total_frames": 300,
+    "avg_fps": 30.0
+  },
+  {
+    "id": "job-1782367950",
+    "name": "DJI_20260621103107_0070_D AI Trace",
+    "model_name": "Unknown Model",
+    "video_name": "DJI_20260621103107_0070_D.MP4",
+    "date": "2026-06-25 11:42",
+    "status": "Completed",
+    "total_frames": 300,
+    "avg_fps": 30.0
+  }
+]

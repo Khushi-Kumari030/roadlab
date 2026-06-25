@@ -1,0 +1,164 @@
+[
+  {
+    "id": "m1",
+    "name": "YOLOv8n-RoadDamage.onnx",
+    "type": "Segmentation",
+    "framework": "ONNX",
+    "input_resolution": "640x640",
+    "fileSize": "12.4 MB",
+    "uploadDate": "2026-06-23 15:40",
+    "status": "Active"
+  },
+  {
+    "id": "m2",
+    "name": "ResNet50-LaneDetection.pt",
+    "type": "Lane Detection",
+    "framework": "PyTorch",
+    "input_resolution": "1280x720",
+    "fileSize": "98.2 MB",
+    "uploadDate": "2026-06-22 11:20",
+    "status": "Inactive"
+  },
+  {
+    "id": "m3",
+    "name": "ByteTrack-Vehicle.engine",
+    "type": "Tracking",
+    "framework": "TensorRT",
+    "input_resolution": "1920x1080",
+    "fileSize": "45.1 MB",
+    "uploadDate": "2026-06-21 09:12",
+    "status": "Active"
+  },
+  {
+    "id": "model-1782367378",
+    "name": "best.pt",
+    "type": "Lane Detection",
+    "framework": "PyTorch",
+    "input_resolution": "848x480",
+    "channels": 3,
+    "normalization": "None",
+    "classes": [
+      "left_lane",
+      "right_lane"
+    ],
+    "outputs": {
+      "masks": false,
+      "lanes": false,
+      "keypoints": false,
+      "custom": false
+    },
+    "fileSize": "21 MB",
+    "uploadDate": "2026-06-25 11:32",
+    "status": "Inactive"
+  },
+  {
+    "id": "m-default_user-m1",
+    "name": "YOLOv8n-RoadDamage.onnx",
+    "type": "Segmentation",
+    "framework": "ONNX",
+    "input_resolution": "640x640",
+    "channels": 3,
+    "normalization": "0-1 Norm",
+    "classes": [
+      "pothole",
+      "crack"
+    ],
+    "outputs": {
+      "masks": true,
+      "lanes": false
+    },
+    "fileSize": "12.4 MB",
+    "uploadDate": "2026-06-23 15:40",
+    "status": "Active",
+    "owner_user_id": "default_user"
+  },
+  {
+    "id": "m-default_user-m2",
+    "name": "ResNet50-LaneDetection.pt",
+    "type": "Lane Detection",
+    "framework": "PyTorch",
+    "input_resolution": "1280x720",
+    "channels": 3,
+    "normalization": "Mean-Std Norm",
+    "classes": [
+      "lane_line"
+    ],
+    "outputs": {
+      "masks": false,
+      "lanes": true
+    },
+    "fileSize": "98.2 MB",
+    "uploadDate": "2026-06-22 11:20",
+    "status": "Inactive",
+    "owner_user_id": "default_user"
+  },
+  {
+    "id": "m-default_user-m3",
+    "name": "ByteTrack-Vehicle.engine",
+    "type": "Tracking",
+    "framework": "TensorRT",
+    "input_resolution": "1920x1080",
+    "channels": 3,
+    "normalization": "None",
+    "classes": [
+      "car",
+      "truck",
+      "bus",
+      "motorcycle",
+      "bicycle"
+    ],
+    "outputs": {
+      "masks": false,
+      "lanes": false
+    },
+    "fileSize": "45.1 MB",
+    "uploadDate": "2026-06-21 09:12",
+    "status": "Active",
+    "owner_user_id": "default_user"
+  },
+  {
+    "id": "m-default_user-m4",
+    "name": "best.pt",
+    "type": "Tracking",
+    "framework": "PyTorch",
+    "input_resolution": "640x640",
+    "channels": 3,
+    "normalization": "0-1 Norm",
+    "classes": [
+      "car",
+      "truck",
+      "bus",
+      "motorcycle",
+      "bicycle"
+    ],
+    "outputs": {
+      "masks": false,
+      "lanes": false
+    },
+    "fileSize": "25.5 MB",
+    "uploadDate": "2026-06-25 11:23",
+    "status": "Active",
+    "owner_user_id": "default_user"
+  },
+  {
+    "id": "m-default_user-m5",
+    "name": "RDD_data_potholes.pt",
+    "type": "Segmentation",
+    "framework": "PyTorch",
+    "input_resolution": "640x640",
+    "channels": 3,
+    "normalization": "0-1 Norm",
+    "classes": [
+      "pothole",
+      "crack"
+    ],
+    "outputs": {
+      "masks": true,
+      "lanes": false
+    },
+    "fileSize": "48.2 MB",
+    "uploadDate": "2026-06-25 11:23",
+    "status": "Active",
+    "owner_user_id": "default_user"
+  }
+]
